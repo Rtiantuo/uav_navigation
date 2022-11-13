@@ -1,0 +1,41 @@
+<launch>
+    <param name="real_or_sim" value="0"/>
+
+    <param name="grid_map/cx" value="315.917"/>
+    <param name="grid_map/cy" value="243.442"/>
+    <param name="grid_map/fx" value="387.355"/>
+    <param name="grid_map/fy" value="387.355"/>
+
+    <param name="grid_map/map_sizex" value="400"/>
+    <param name="grid_map/map_sizey" value="400"/>
+    <param name="grid_map/map_sizez" value="100"/>
+
+    <param name="grid_map/map_resolution" value="0.1"/>
+
+    <param name="grid_map/map_origin_x" value="0"/>
+    <param name="grid_map/map_origin_y" value="0"/>
+    <param name="grid_map/map_origin_z" value="0"/>
+
+    <param name="grid_map/map_inflate_factor_x" value="2"/>
+    <param name="grid_map/map_inflate_factor_y" value="2"/>
+    <param name="grid_map/map_inflate_factor_z" value="1"/>
+
+
+    <param name="grid_map/depth_filter_min" value="0.3"/>
+    <param name="grid_map/depth_filter_max" value="5.0"/>
+
+    <param name="grid_map/output_low_bound" value="0.0"/>
+    <param name="grid_map/output_up_bound" value="2.5"/>
+
+    <param name="Astar3d/up_flying_bound" value="25"/>
+    <param name="Astar3d/down_flying_bound" value="0"/>
+    <param name="Astar3d/interpolation_dist" value="0.1"/>
+    <param name="Astar3d/opt_params/adjust_epoch" value="100"/>
+    <param name="Astar3d/opt_params/w_smooth" value="0.1"/>
+    <param name="Astar3d/opt_params/w_obs" value="0.02"/>
+    <param name="Astar3d/opt_params/w_len" value="0.05"/>
+    <param name="Astar3d/opt_params/thr_obs" value="0.6"/>
+    <param name="Astar3d/opt_params/thr_len" value="0.1"/>
+
+    <node pkg="aggressive_planner" type="planner" name ="planner" output="screen"/>
+</launch>

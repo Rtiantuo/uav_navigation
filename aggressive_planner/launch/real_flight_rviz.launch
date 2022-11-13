@@ -1,0 +1,3 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find aggressive_planner)/config/real.rviz"/>
+</launch>
